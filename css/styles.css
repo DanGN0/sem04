@@ -39,9 +39,12 @@ ELEMENTS-TEXTE
         font-family: "Lato", sans-serif;
         font-weight: 100;
         font-size: 4.8rem;
-        line-height: 160%;
+        line-height: 6rem;
         letter-spacing: 5.5%;
         text-align: right;
+
+        padding: 55px 0;
+        margin:0;
     }
 
     h3{
@@ -62,6 +65,16 @@ ELEMENTS-TEXTE
        
     }
 
+    p{
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    footer p{
+        font-weight: bold;
+    }
+
 /*===============================================================================================================
 ELEMENTS
 ===============================================================================================================*/
@@ -72,14 +85,25 @@ header{
 
 article{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 50px
+}
+
+article:hover{
+    background-color: #BDC3C7;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 article div{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: #D35400;
 
     width: 210px;
@@ -89,4 +113,39 @@ article div{
     border:#D35400 solid 5px;
     background-color: white;
     border-radius: 50%;
+}
+
+.info .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+footer{
+    background-color: #2980B9;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button{
+    background-color: white;
+    border: #BDC3C7 solid 3px;
+    border-radius: 50%; 
+
+    height: 50px;
+    width:50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
